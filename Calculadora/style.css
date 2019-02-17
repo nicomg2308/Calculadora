@@ -1,0 +1,58 @@
+body{
+  position: absolute;
+  display: flex;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.ct{
+  width: 250px; height: 250px;
+  position: relative;
+  margin:auto;
+  border: 10px solid LightGreen;
+}
+
+.subct{
+  position: absolute;
+  display: flex;
+  border: 1px solid DarkGray;
+}
+
+.subct.display{
+  top: 100; left: 100;
+  width: 250px; height: 50px;
+}
+
+.subct.numbers{
+  top: 50px; left: 0;
+  width: 150px; height: 200px;
+}
+
+.subct.operations{
+  top: 50px; left: 150px;
+  width: 100px; height: 200px;
+}
+
+.subct .box{
+  margin: auto;
+  text-align: center;
+}
+
+.subct.display .box input{
+  width: 240px; height: 40px;
+  font-size: 40px;
+  text-align: right;
+}
+
+.subct.numbers .box input, .subct.operations .box input{
+  position: relative;
+  display: inline-block;
+  width: 45px; height:45px;
+}
+
+.subct.numbers .box input.doublewidth, .subct.operations .box input.doublewidth{
+    width: 90px;
+}
+
+.subct.numbers .box input:hover, .subct.operations .box input:hover{
+    background-color: LightBlue;
+}
